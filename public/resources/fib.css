@@ -1,0 +1,124 @@
+#logo {
+    max-height: 35vh;
+}
+
+nav {
+    background-color: #3f6617;
+}
+
+#logo-mini {
+    border-radius: 30px;
+    padding: 1px;
+    background-color: white;
+}
+
+h1 {
+    color: #3f6617 !important;
+    font-weight: lighter;
+}
+
+h2 {
+    color: #f5abcc;
+}
+
+h3 {
+    color: #afd134;
+}
+
+main {
+    padding-top: 1rem;
+}
+
+section {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.green {
+    color: #3f6617;
+}
+
+.soft-green {
+    color: #afd134;
+}
+
+.pink {
+    color: #f5abcc;
+}
+
+.purple {
+    color: #723B78;
+}
+
+.border-purple {
+    border-color: #723B78;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+small {
+    font-size: .65em;
+}
+
+.bio-pics {
+    float: left;
+    width: 12rem;
+    margin-right: 1rem;
+}
+
+.carousel-item {
+    height: 35vh;
+}
+
+.carousel-background-image {
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.carousel-foreground-image {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 576px){
+    .bio-pics {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media (min-width: 62em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
