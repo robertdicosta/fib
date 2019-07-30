@@ -1,5 +1,5 @@
 # Families In Bloom, LLC
-This is the website for [Families In Bloom](familiesinbloom.net), an LLC providing childbirth education in the greater Phoenix area.
+This is the website for [Families In Bloom](http://familiesinbloom.net), an LLC providing childbirth education in the greater Phoenix area.
 
 ## Technical Overview
 This is a small static site, using a lot of hand-written markup. The only dependency is Bootstrap 4, and there are no internal build tools.
