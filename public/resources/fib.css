@@ -122,3 +122,5 @@ small {
         column-count: 2;
     }
 }
+
+h2[itemprop="name"]{ font-size:1.6em; }
