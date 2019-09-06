@@ -12,16 +12,16 @@ nav {
     background-color: white;
 }
 
-h1 {
+h1, .h1 {
     color: #3f6617 !important;
     font-weight: lighter;
 }
 
-h2 {
+h2, .h2 {
     color: #f5abcc;
 }
 
-h3 {
+h3, .h3 {
     color: #afd134;
 }
 
