@@ -27,6 +27,16 @@
  <link rel="manifest" href="/site.webmanifest">
  <meta name="msapplication-TileColor" content="#603cba">
  <meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  #logo-mini {float: left; margin-right: 10px; vertical-align: middle !important; margin-top: -6px;}
+  .fb_iframe_widget {overflow: hidden;width: 100%;}
+  .navbar-expand-lg .navbar-nav .nav-link {padding-right: 1.5rem;padding-left: 1.5rem;}
+  .dropdown-menu > li > a {padding: 6px 20px;}
+  .nav > li > a:focus, .nav .open > a:focus, .nav > li > a:hover {background-color: #325310 !important;}
+  </style>
 </head>
 <body class="bg-light">
 <header class="bg-white">
@@ -47,9 +57,14 @@
   <li class="nav-item">
    <a class="nav-link" href="index.html">Home</a>
   </li>
-  <li class="nav-item">
-   <a class="nav-link" href="classes.html">Class Offerings</a>
-  </li>
+  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="our-classes.html">Class Offerings</a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://familiesinbloom.net/breastfeeding.html">Breastfeeding Classes</a></li>
+                  <li><a href="https://familiesinbloom.net/prenatal-education.html">Prenatal Education</a></li>
+                  <li><a href="https://familiesinbloom.net/prepared-childbirth.html">Prepared Childbirth Classes</a></li>
+                  <li><a href="https://familiesinbloom.net/infant-care.html">Infant Care Classes</a></li>
+                </ul>
+    </li>
   <li class="nav-item">
    <a class="nav-link" href="instructor.html">Your Instructor</a>
   </li>
@@ -57,9 +72,18 @@
    <a class="nav-link" href="testimonials.html">Testimonials</a>
   </li>
   <li class="nav-item">
-   <a class="nav-link" href="contact.html">Contact</a>
-  </li>
-  </ul>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="community-resources.html">Community Resources</a>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="#">FAQ</a>
+            <ul class="dropdown-menu">
+             <li><a href="faq-for-childbirth-classes.html">FAQ For Child Birth Classes</a></li>
+             <li><a href="faq-for-breastfeeding.html">FAQ For Breast Feeding</a></li>
+            </ul>
+            </li>
+        </ul>
  </div>
 </nav>
 <main class="container">
