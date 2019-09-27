@@ -42,7 +42,7 @@ $message = "New Quote Request<br><table width='400px' border='1' cellpadding='0'
 <br>
 ";
   $mime_boundary="==Multipart_Boundary_x".md5(mt_rand())."x";
-         $headers = "From: artpack@artpackco.com\r\n" .
+         $headers = "From: info@familiesinbloom.net\r\n" .
          "MIME-Version: 1.0\r\n" .
             "Content-Type: multipart/mixed;\r\n" .
             " boundary=\"{$mime_boundary}\"";
