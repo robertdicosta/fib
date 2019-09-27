@@ -51,30 +51,6 @@ $message = "New Quote Request<br><table width='400px' border='1' cellpadding='0'
             "Content-Type: text/html; charset=\"iso-8859-1\"\n" .
             "Content-Transfer-Encoding: 7bit\n\n" .
          $message . "\n\n";
-         foreach($_FILES as $userfile)
-         {
-            $tmp_name = $userfile['tmp_name'];
-            $type = $userfile['type'];
-            $name = $userfile['name'];
-            $size = $userfile['size'];
-            if (file_exists($tmp_name))
-            {
-               if(is_uploaded_file($tmp_name))
-               {
-                  $file = fopen($tmp_name,'rb');
-                  $data = fread($file,filesize($tmp_name));
-                  fclose($file);
-                  $data = chunk_split(base64_encode($data));
-               }
-               $message .= "--{$mime_boundary}\n" .
-                  "Content-Type: {$type};\n" .
-                  " name=\"{$name}\"\n" .
-                  "Content-Disposition: attachment;\n" .
-                  " filename=\"{$fileatt_name}\"\n" .
-                  "Content-Transfer-Encoding: base64\n\n" .
-               $data . "\n\n";
-            }
-         }
          $message.="--{$mime_boundary}--\n";
 if (mail($to, $subject, $message, $headers))
    //echo "Mail sent successfully.";
