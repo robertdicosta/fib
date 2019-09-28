@@ -124,3 +124,42 @@ small {
 }
 
 h2[itemprop="name"]{ font-size:1.6em; }
+
+/* Css for Address in Header */
+  .address-header{
+  vertical-align: middle; float: right; margin-top:20px; font-size: 16px; text-align: right;
+  }
+  .glyphicon{
+    top: 2px;
+    color: #3F6517;
+  }
+  .glyphicon:before{
+    padding-right:6px;
+  }
+  .footer-menu li{
+    list-style-type: none;
+    padding: 6px;
+    text-align: left;
+    font-size: 16px;
+  }
+  .footer-address{
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .footer-form input, .footer-form textarea{
+    width:80%;
+    padding: 8px;
+    margin: 10px 0;
+  }
+  .footer-form input[type=submit]{
+    width: 140px;
+    background-color: #3F6517;
+    color: #fff;
+    border-radius: 18px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h3{
+    color: #3F6517;
+  }
