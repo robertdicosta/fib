@@ -65,9 +65,29 @@
 </head>
 <body class="bg-light">
 <header class="bg-white">
-    <img src="resources/images/logo_full_bg_white.jpg" id="logo" class="img-fluid d-block m-auto">
+<div class="container">
+<div class="row">
+    <div class="col-lg-3">
+        <img src="resources/images/logo_full_bg_white.jpg" id="logo" class="img-fluid d-block m-auto">
+   </div>
+<div class="col-lg-6">
+</div>
+<div class="col-lg-3">
+<div class="address-header">
+<p><strong style="color: #3F6517;">Lori Vraney</strong><br />
+<span class="glyphicon glyphicon-earphone"></span> Phone : (623) 572-7801<br />
+<span class="glyphicon glyphicon-map-marker"></span> Address : 7438 W Paso Trail,<br /> Peoria, AZ, 85383<br />
+<span class="glyphicon glyphicon-envelope"></span>Email : lorivraney@gmail.com<br />
+<a href="https://www.facebook.com/familiesinbloomllc/?modal=admin_todo_tour" target="_blank"><img src="resources/images/facebook.png" alt="facebok" style="width:28px;" /></a>
+<a href="https://twitter.com/Lori_InBloom" target="_blank"><img src="resources/images/twitter.png" alt="twitter" style="width:28px;" /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
 </header>
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+<div class="container">
     <a class="navbar-brand" href="index.html">
         <img src="resources/images/logo_no_text_bg_white.jpg" width="30" height="30" id="logo-mini" class="align-top"
              alt="families in bloom, llc">
@@ -78,11 +98,8 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-   <a class="nav-link" href="index.html">Home</a>
-  </li>
-  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="our-classes.html">Class Offerings</a>
+        <ul class="navbar-nav nav navbar-nav mr-auto">
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="our-classes.html">Class Offerings</a>
                 <ul class="dropdown-menu">
                   <li><a href="https://familiesinbloom.net/breastfeeding.html">Breastfeeding Classes</a></li>
                   <li><a href="https://familiesinbloom.net/prenatal-education.html">Prenatal Education</a></li>
@@ -91,10 +108,10 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="instructor.html">Your Instructor</a>
+                <a class="nav-link" href="instructor.html" title="Your Instructor">Your Instructor</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="testimonials.html">Testimonials</a>
+                <a class="nav-link" href="testimonials.html" title="Testimonials">Testimonials</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -111,6 +128,7 @@
             </li>
         </ul>
     </div>
+</div>
 </nav>
 <main class="container">
     <h1>Your Instructor</h1>
@@ -119,8 +137,7 @@
         <div class="col">
             <img src="resources/images/instructor.JPG" alt="lori vraney"
                  class="bio-pics img-thumbnail rounded">
-            <p>My name is Lori Vraney. I am an RN, BSN and a Certified Childbirth Educator. I have 31 years of
-                experience working in Women and Infants Services and 25 years of experience teaching Childbirth
+            <p>My name is Lori Vraney. I am a RN, BSN, Certified Childbirth Educator, and Certified CPR/First Aid Instructor. I have over 30 years experience working in Women and Infants Services and 25 years of experience teaching Childbirth
                 and Parenting Classes. I have worked with Teens and adults, women planning an adoption for their
                 child and families preparing to adopt. I am also the proud mother of 4 children and grandmother
                 of 5 beautiful grandchildren!
@@ -131,7 +148,7 @@
                 about your birth experience and journey into parenthood.
 
             </p>
-            <p>Some things to consider when choosing your childbirth classes….classes held in a hospital setting
+            <p>Some things to consider when choosing your childbirth classes - classes held in a hospital setting
                 are usually taught by an RN and the information given is geared towards that particular hospital
                 and their practices. Classes held in another location are typically taught by a certified
                 childbirth educator or doula. With Families in Bloom, you will receive the best education
@@ -182,8 +199,8 @@
      <form enctype="multipart/form-data" method="post" name="form1" class="footer-form" action="sendmail.php" onsubmit="return validate(this.form);">
       <input type="text" name="name" placeholder="Full Name" />
       <input type="tel" name="phone" placeholder="Phone Number" />
-      <input type="email" name="email" placeholder="Email Id" />
-      <textarea name="message" placeholder="Message"></textarea>
+      <input type="email" name="email" placeholder="Email" />
+      <textarea name="message" placeholder="How Can We Help You?"></textarea>
       <input type="submit" name="Send" value="Send Message" />
      </form>
 
