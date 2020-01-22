@@ -1,8 +1,19 @@
 <?php
-
+session_start();
 if(isset ($_POST['Send']))
 {
 
+if( (!isset($_POST['name'])) && (!isset($_POST['phone'])) && (!isset($_POST['email'])) ){
+	exit;
+}else{
+
+$key=substr($_SESSION['key'],0,5);
+$number = $_POST['er_auth'];
+ if($number!=$key){
+    echo '<p style="color: #DD252F;font-size:13pt;font-family: Verdana, Arial, Helvetica, sans-serif; text-align:center;"><strong>You have enter Incorrect verification code!Please try Again.</strong></p>';
+    echo '<p align="center"><b><a href="javascript:history.go(-1)" style="color: #666666;font-size:12pt;font-family: Verdana, Arial, Helvetica, sans-serif;">GO BACK</a></b></p>';
+    die();
+ }
 
 $to = "lorivraney@gmail.com";
 $subject= "Contact Us Form";
@@ -57,5 +68,6 @@ if (mail($to, $subject, $message, $headers))
    header( 'Location: https://familiesinbloom.net/thankyou.html' ) ;
 else
    echo "Error in mail";
+}
 }
 ?>

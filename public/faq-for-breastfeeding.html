@@ -353,7 +353,9 @@ Infant CPR & First Aid
       <input type="text" name="name" placeholder="Full Name" />
       <input type="tel" name="phone" placeholder="Phone Number" />
       <input type="email" name="email" placeholder="Email" />
-      <textarea name="message" placeholder="How Can We Help You?"></textarea>
+      <textarea name="message" placeholder="How Can We Help You?"></textarea><br />
+      <b> : Captcha Verification :</b> <br />
+      <img src="captcha/php_captcha.php" name="verification_image"  id="verification_image" style="cursor:hand; cursor:pointer; vertical-align:middle; width: 28%" alt="Verification Code" /><input type="hidden" name="er_check_human" value="1" /> <b>:</b> <input name="er_auth" type="text" size="15" maxlength="5" style="width:40%;" placeholder="Enter Captcha" /><br />
       <input type="submit" name="Send" value="Send Message" />
      </form>
 

@@ -1,19 +1,23 @@
 function validate()
 {
 	var n=0;
-    var arr = new Array("Name","Phone","Email");
+    var arr = new Array("Name","Phone","Email","","","Captcha");
 	try
 	{
 		n=document.form1.elements.length;
 
-    	for(i=0;i<3;i++)
+    	for(i=0;i<6;i++)
 		{
+		  if( i==3 || i==4 ){
+		    }
+          else{
           if(document.form1.elements[i].value=="")
 			{
 			alert(arr[i]+" could not be blank");
 			document.form1.elements[i].focus();
 			return false;
 			}
+            }
 	     }
         if(!isEmail(document.form1.elements[2]))
 		{
